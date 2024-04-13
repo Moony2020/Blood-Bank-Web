@@ -1,67 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Title Here</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* Move your CSS styles to an external stylesheet for better organization */
 
-        /* Resetting default margin and padding for ul */
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #8B008B;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Title Here</title>
+        <style>
+            /* Resetting default margin and padding for ul */
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #8B008B;
+            }
 
-        /* Style for list items */
-        li {
-            float: left;
-            border-right: 1px solid #bbb;
-        }
+            /* Style for list items */
+            li {
+                float: left;
+                border-right: 1px solid #bbb;
+            }
 
-        /* Remove border from the last list item */
-        li:last-child {
-            border-right: none;
-        }
+            /* Remove border from the last list item */
+            li:last-child {
+                border-right: none;
+            }
 
-        /* Style for links */
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
+            /* Style for links */
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
 
-        /* Hover effect for links */
-        li a:hover:not(.active) {
-            background-color: #0000FF;
-        }
+            /* Hover effect for links */
+            li a:hover:not(.active) {
+                background-color: #0000FF;
+            }
 
-        /* Clear floats after the list items */
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-    </style>
-</head>
-<body>
+            /* Clear floats after the list items */
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
 
-<ul class="clearfix">
-    <!-- Your navigation links -->
-    <li><a href="home.jsp">Home</a></li>
-    <li><a href="addNewDonor.jsp">Add New Donor</a></li>
-    <li><a href="editDeleteList.jsp">Edit, Delete and List of Donor Details</a></li>
-    <li><a href="manageStock.jsp">Manage Stock</a></li>
-    <li><a href="requestForBlood.jsp">Request for Blood</a></li>
-    <li><a href="requestCompleted.jsp">Request Completed</a></li>
-    <li style="float:right"><a href="adminLogin.jsp">Logout</a></li>
-</ul>
+            /* Logout link style */
+            li.logout {
+                float: right;
+            }
+        </style>
+    </head>
 
-</body>
+    <body>
+
+        <ul class="clearfix">
+            <!-- Your navigation links -->
+            <li><a href="home.jsp">Home</a></li>
+            <li><a href="addNewDonor.jsp">Add New Donor</a></li>
+            <li><a href="editDeleteList.jsp">Edit, Delete and List of Donor Details</a></li>
+            <li><a href="manageStock.jsp">Manage Stock</a></li>
+            <li><a href="requestForBlood.jsp">Request for Blood</a></li>
+            <li><a href="requestCompleted.jsp">Request Completed</a></li>
+            <li class="logout"><a href="adminLogin.jsp">Logout</a></li>
+        </ul>
+
+    </body>
+
 </html>
